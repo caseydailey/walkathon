@@ -13,7 +13,7 @@
     <h1>Walk-a-Thon Donors</h1>
     <div class="row">
         <div class="col-sm-6 col-lg-5">
-            <table class="table table-striped">
+            <table class="table table-striped" id="table">
                   <thead>
                   <tr>
                       <th>Name</th>
@@ -57,7 +57,7 @@
 <div class="col-sm-6 col-lg-5 col-lg-offset-2" id="signup">
     
     <h2>Sign Up</h2>
-    <form>
+    <form id="form" action="#">
     <label>First Name</label>
     <input type="text" name="firstname" class=""><br>
     <label>Last Name</label>
@@ -70,7 +70,8 @@
     <input type="radio" name="lap-or-lump">
     <label>Lump</label>
     <input type="radio" name="lap-or-lump"><br>
-    <input type="submit" value="Sign up" class="btn btn-primary">  
+    <input type="submit" value="Donate" class="btn btn-primary">  
+    <input type="button" value="Cancel" class="btn btn-danger">  
     </form>
 </div>
 
