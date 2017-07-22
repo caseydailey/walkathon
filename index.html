@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Walkathon</title>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>Walk-a-Thon Donors</h1>
 
 <div class="container">
+    <h1>Walk-a-Thon Donors</h1>
     <div class="row">
-        <div class="col-sm-6 col-lg-8">
+        <div class="col-sm-6 col-lg-5">
             <table class="table table-striped">
                   <thead>
                   <tr>
@@ -53,9 +53,9 @@
     
 
 
-<h1>Donate</h1>
 
-<div class="col-sm-6 col-lg-4" id="signup">
+<div class="col-sm-6 col-lg-5 col-lg-offset-2" id="signup">
+    
     <h2>Sign Up</h2>
     <form>
     <label>First Name</label>
@@ -67,12 +67,10 @@
     <label>Amount</label>
     <input type="text" name="username" class=""><br>
     <label>Lap</label>
-    <input type="checkbox" name="Lap" class=""><br>
+    <input type="radio" name="lap-or-lump">
     <label>Lump</label>
-    <input type="checkbox" name="Lump" class=""><br>
-    <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label><br>
-    <input type="submit" value="Sign up" class="btn btn-primary">
-    
+    <input type="radio" name="lap-or-lump"><br>
+    <input type="submit" value="Sign up" class="btn btn-primary">  
     </form>
 </div>
 
@@ -80,8 +78,11 @@
 </div>
 
 
-    
-<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap and jquery -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- our shit -->
 <script src="javascripts/dom.js"></script>
 <script src="javascripts/donor.js"></script>
 <script src="javascripts/main.js"></script>
