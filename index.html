@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Walkathon</title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -11,7 +12,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="span3">
+        <div class="col-sm-6 col-lg-8">
             <table class="table table-striped">
                   <thead>
                   <tr>
@@ -49,31 +50,35 @@
               </tbody>
             </table>
         </div>
-    </div>
-</div>
+    
+
 
 <h1>Donate</h1>
 
-<div class="span3">
+<div class="col-sm-6 col-lg-4" id="signup">
     <h2>Sign Up</h2>
     <form>
     <label>First Name</label>
-    <input type="text" name="firstname" class="span3"><br>
+    <input type="text" name="firstname" class=""><br>
     <label>Last Name</label>
-    <input type="text" name="lastname" class="span3"><br>
+    <input type="text" name="lastname" class=""><br>
     <label>Email Address</label>
-    <input type="email" name="email" class="span3"><br>
+    <input type="email" name="email" class=""><br>
     <label>Amount</label>
-    <input type="text" name="username" class="span3"><br>
+    <input type="text" name="username" class=""><br>
     <label>Lap</label>
-    <input type="checkbox" name="Lap" class="span3"><br>
+    <input type="checkbox" name="Lap" class=""><br>
     <label>Lump</label>
-    <input type="checkbox" name="Lump" class="span3"><br>
+    <input type="checkbox" name="Lump" class=""><br>
     <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label><br>
     <input type="submit" value="Sign up" class="btn btn-primary">
-    <div class="clearfix"></div>
+    
     </form>
 </div>
+
+</div> 
+</div>
+
 
     
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
