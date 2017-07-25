@@ -20,12 +20,6 @@ function getData(event){
         console.log("input.name",input.name);
         console.log(`${input.name}.value`,input.value);
     });
-    // console.log("checked: ", checked);
-    console.log("radios: ", radios);
-    let checked = radios.filter((radio)=>radio.checked === true);
-    console.log("checked:", checked);
-}
-
-function donate(event) {
-    
+    let checked = radios.filter((radio)=>radio.checked === true)[0].id;
+    console.log("checked:", checked); 
 }
