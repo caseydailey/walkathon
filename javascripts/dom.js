@@ -14,12 +14,13 @@ let radios = Array.from(document.querySelectorAll(".radio"));
 //add listeners
 form.addEventListener("submit", getData);
 
+let donor = {};
 function getData(event){
     event.preventDefault();
     inputs.forEach((input)=>{
-        console.log("input.name",input.name);
-        console.log(`${input.name}.value`,input.value);
+        donor[input.name] = input.value;
     });
     let checked = radios.filter((radio)=>radio.checked === true)[0].id;
-    console.log("checked:", checked); 
+    donor.paymentType = checked;
+    console.log("donor: ", donor);
 }
