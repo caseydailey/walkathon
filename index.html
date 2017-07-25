@@ -57,21 +57,23 @@
 <div class="col-sm-6 col-lg-5 col-lg-offset-2" id="signup">
     
     <h2>Sign Up</h2>
-    <form id="form" action="#">
+    <form id="form">
     <label>First Name</label>
-    <input type="text" name="firstname" class=""><br>
+    <input type="text" name="firstname" class="input"><br>
     <label>Last Name</label>
-    <input type="text" name="lastname" class=""><br>
+    <input type="text" name="lastname" class="input"><br>
     <label>Email Address</label>
-    <input type="email" name="email" class=""><br>
+    <input type="email" name="email" class="input"><br>
     <label>Amount</label>
-    <input type="text" name="username" class=""><br>
+    <input type="text" name="amount" class="input"><br>
+
     <label>Lap</label>
-    <input type="radio" name="lap-or-lump">
+    <input type="radio" name="lap-or-lump" id="lap" class="radio">
     <label>Lump</label>
-    <input type="radio" name="lap-or-lump"><br>
-    <input type="submit" value="Donate" class="btn btn-primary">  
-    <input type="button" value="Cancel" class="btn btn-danger">  
+    <input type="radio" name="lap-or-lump" id="lump" class="radio"><br>
+
+    <button type="submit" value="Donate" class="btn btn-primary">Donate</button>  
+    <button type="button" value="Cancel" class="btn btn-danger">Cancel</button>  
     </form>
 </div>
 
