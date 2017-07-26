@@ -1,10 +1,33 @@
 "use strict";
 
 var Donor = (function(donor) {
-    let donors = [];
+    let donors = [
+        {
+            firstName: "casey",
+            lastName: "dailey",
+            email: "casey@test.com",
+            amount: "20.88",
+            paymentType: "lump" 
+        },
+        {
+            firstName: "matt",
+            lastName: "brutton",
+            email: "matt@test.com",
+            amount: "20.22",
+            paymentType: "lap" 
+        },
+        {
+            firstName: "jissie",
+            lastName: "david",
+            email: "jissie@test.com",
+            amount: "20.44",
+            paymentType: "lump" 
+        }
+    ];
+
     let user = {};
 
-    donor.getData = function(event){
+    donor.addDonor = function(event){
 
         event.preventDefault();
         inputs.forEach((input)=>{
@@ -12,9 +35,8 @@ var Donor = (function(donor) {
         });
         let checked = radios.filter((radio)=>radio.checked === true)[0].id;
         user.paymentType = checked;
-        console.log("user: ", user);
         donors.push(user);
-        console.log("donors: ", donors);
+        displayDonors();
     }
 
     donor.getDonors = function(){

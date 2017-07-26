@@ -14,39 +14,17 @@
     <div class="row">
         <div class="col-sm-6 col-lg-5">
             <table class="table table-striped" id="table">
-                  <thead>
+              <thead>
                   <tr>
-                      <th>Name</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
                       <th>email</th>
                       <th>Donation Amount</th>
-                      <th>Lap or Lump</th>                                          
+                      <th>Lap or Lump</th>                                   
                   </tr>
               </thead>   
               <tbody>
-                <tr>
-                    <td>Donna R. Folse</td>
-                    <td>email@email</td>
-                    <td>$20.00</td>
-                    <td>Lap</td>                                       
-                </tr>
-                <tr>
-                    <td>Donna R. Folse</td>
-                    <td>email@email</td>
-                    <td>$20.00</td>
-                    <td>Lap</td>                                       
-                </tr>
-                <tr>
-                    <td>Donna R. Folse</td>
-                    <td>email@email</td>
-                    <td>$20.00</td>
-                    <td>Lump</td>                                       
-                </tr>
-                <tr>
-                    <td>Donna R. Folse</td>
-                    <td>email@email</td>
-                    <td>$20.00</td>
-                    <td>Lap</td>                                       
-                </tr>    
+                <!-- insert user info here with the js -->
               </tbody>
             </table>
         </div>
@@ -59,9 +37,9 @@
     <h2>Sign Up</h2>
     <form id="form">
     <label>First Name</label>
-    <input type="text" name="firstname" class="input"><br>
+    <input type="text" name="firstName" class="input"><br>
     <label>Last Name</label>
-    <input type="text" name="lastname" class="input"><br>
+    <input type="text" name="lastName" class="input"><br>
     <label>Email Address</label>
     <input type="email" name="email" class="input"><br>
     <label>Amount</label>
@@ -73,7 +51,7 @@
     <input type="radio" name="lap-or-lump" id="lump" class="radio"><br>
 
     <button type="submit" value="Donate" class="btn btn-primary">Donate</button>  
-    <button type="button" value="Cancel" class="btn btn-danger">Cancel</button>  
+    <button type="button" id="cancel" value="Cancel" class="btn btn-danger">Cancel</button>  
     </form>
 </div>
 
