@@ -7,7 +7,7 @@ let tbody = document.querySelector("tbody");
 let form = document.querySelector("#form");
 let inputs = Array.from(document.querySelectorAll(".input"));
 let radios = Array.from(document.querySelectorAll(".radio"));
-let cancel = Array.from(document.querySelectorAll("#cancel"));
+let cancel = document.querySelector("#cancel");
 
 
 
@@ -29,8 +29,9 @@ let displayDonors = function(){
     });
 }
 
-let clear = function(){
-    
+function clear(){    
+   inputs.forEach((input)=>input.value = "");
+   radios.forEach((radio)=>radio.checked = false);
 }
 
 displayDonors();
