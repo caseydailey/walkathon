@@ -18,7 +18,6 @@ cancel.addEventListener("click", clear);
 let displayDonors = function(){
     let donors = Donor.getDonors();
     donors.forEach((donor)=>{
-        console.log("donor:", donor);
         tbody.innerHTML += `<tr>
                                 <td>${donor.firstName}</td>
                                 <td>${donor.lastName}</td>
@@ -27,6 +26,16 @@ let displayDonors = function(){
                                 <td>${donor.paymentType}</td>                                       
                             </tr>`
     });
+}
+
+function displayNewDonor(donor){
+    tbody.innerHTML += `<tr>
+                            <td>${donor.firstName}</td>
+                            <td>${donor.lastName}</td>
+                            <td>${donor.email}</td>
+                            <td>${donor.amount}</td>
+                            <td>${donor.paymentType}</td>                                       
+                        </tr>`;
 }
 
 function clear(){    

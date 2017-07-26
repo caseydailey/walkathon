@@ -33,10 +33,11 @@ var Donor = (function(donor) {
         inputs.forEach((input)=>{
             user[input.name] = input.value;
         });
+
         let checked = radios.filter((radio)=>radio.checked === true)[0].id;
         user.paymentType = checked;
         donors.push(user);
-        displayDonors();
+        displayNewDonor(user);
     }
 
     donor.getDonors = function(){
